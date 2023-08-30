@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+  <title>Secondpage</title>
+</head>
+
+<body>
+  
+  <h3>mokal3861</h3>
+  <p>Skolen min hadde en grei kinosal. Oslomet er bedre.</p>
+
+  <h3>dajoh2062</h3>
+  <p>Skolen min hadde en stor idrettshall, med utendørs fotballbaner og sandvolleyball.</p>
+  <p>Skolen min heter Nannestad vgs og ligger ved gardemoen.</p>
+
+  <h3>erikle95831</h3>
+  <p>Noen brant ned skolen mins gymsal. Vi måtte trene i Lambertseter flerbrukshall</p>
+    <p>og i treningstudio.</p>
+  <p>Skolen min heter Lambertseter vgs</p>
+
+</h2> Lenke til First Page>
+  <li><a href="1oppgave.html">Firstpage</a>
+</li>
+  
+</body>
+
+</html>
