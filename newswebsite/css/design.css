@@ -19,4 +19,5 @@ h3.tekst {
     padding: 0.6rem;
     float: left;
     width: 25%;
+    min-width: 110px;
 }
