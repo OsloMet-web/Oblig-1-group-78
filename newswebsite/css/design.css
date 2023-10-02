@@ -28,7 +28,8 @@ div.bildeAvErna {
         background-size:cover;
         float:left;
         margin: auto;
-        width: 400px;
+        width:60%;
+        min-width: 400px;
         height: 300px;
 
   }
