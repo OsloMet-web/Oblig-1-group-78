@@ -29,9 +29,13 @@ div.bildeAvErna {
     height: 0.5rem;
     padding:0.7rem;
   }
- .infotekst {
-    border: 1px solid black;
-    padding: 0.7rem;
+.infotekst {
+    width: 40%;
+    float: left;
+}
+.infotekst2 {
+    width: 55%;
+    float: right;
 }
 .navbar {
     list-style-type: none;
@@ -57,6 +61,11 @@ div.bildeAvErna {
 .navbar li a:hover:not(.active) {
     background-color: #a0631dbe;
     color: rgb(0, 0, 0);
+}
+body {
+    text-align: center;
+    background-color:wheat;
+
 }
     
 
