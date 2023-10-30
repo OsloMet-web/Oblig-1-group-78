@@ -6,9 +6,8 @@
 p.forfatter {
     font-size: 1.5vw;
 }
-#erna{
-    width: 500px;
-    height: 300px;
+.erna_bilde{
+    width: 100%;
 }
 #logo{
     width: 25px;
@@ -27,19 +26,6 @@ h3.tekst {
     font-size: 1.5vw;
 }
 
-div.bildeAvErna {
-        background-image: url(../images/erna_eter.jfif);
-        background-repeat: no-repeat;
-        background-size:cover;
-        float:left;
-        margin: auto;
-        /* har fjernet width */
-        display: flex; /* har satt den til flex slik 
-        at teksten ikke kommer på bildet*/
-        min-width: 400px;
-        height: 300px;
-
-  }
 .infotekst {
     float: left;
     padding-left: 20%;
