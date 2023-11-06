@@ -104,25 +104,28 @@ h3{
  background: transparent;
  border: 1px solid yellow; 
 }
-.kort-container {
-    display: flex;
-    background-color: #ffffff;
+.kort-container { /*Lager en kontainer og definerer plassen til kortene, 
+    og bakgrunnsfarge, slik at kortene ikke kommer på headeren*/
+    display: flex; /*Kortene skal være selvstendinge, ingen elementer oppå kortene*/
+    background-color: #ffffff;/*Definerer farge*/
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 100px;
 }
-.kort {
+.kort { /*Definerer kort verdiene i dette avsnittet*/
     width: 325px;
     background-color: #f0f0f0;
-    border-radius: 8px;
-    overflow: hidden;
+    border-radius: 8px;/*Justerer kant*/
+    overflow: hidden;/*viser kanten*/
     box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
     margin: 20px;
 }
 .kort img {
-    width: 100%;
+    width: 100%; /*autojusterer bilde, tilpasser det automatisk*/
     height: auto;
 }
+/*tilpasser kort innholdet i de tre paragrafene slik 
+at det ser fint ut*/
 .kort-innhold{
     padding: 16px;
 }
@@ -135,13 +138,13 @@ h3{
     font-size: 15px;
     line-height: 1.3;
 }
-.kort-innhold .kort-link {
+.kort-innhold .kort-link { /*I denne paragrafen tilpassser vi lenken med dekorasjon*/
     display: inline-block;
     padding: 8px 16px;
-    background-color: #333;
-    text-decoration: none;
+    background-color: #155b25;
+    text-decoration: none; /*ingen dekorasjon*/
     border-radius: 4px;
     margin-top: 16px;
-    color:#fff;
+    color:#ffffff; /*hvit skriftfarge*/
     
 }
