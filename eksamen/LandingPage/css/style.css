@@ -1,0 +1,82 @@
+*{padding: 0; margin: 0; box-sizing: border-box;}
+header {
+ width: 100%;
+ height: 90vh;
+ background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url(oslomet-logo-graavegg-2400x1200.jpg);
+ background-size: cover;
+
+}
+nav {
+ width:100%;
+ height: 100px;
+ color:white;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ font-family: sans-serif;
+}
+.logo {
+ font-size: 3vw;
+ letter-spacing: 2px;
+}
+.meny a{
+ text-decoration: none;
+ color: white;
+ padding: 10px 20px;
+ font-size: 2vw;
+ position: relative;
+}
+.meny a:before {
+ content: '';
+ position: absolute;
+ top:0;
+ left:0;
+ width:0%;
+ height: 100%;
+ border-bottom: 2px solid indianred;
+ transition: 0.4s linear; /*den skal bruke 0.4 sekunder*/
+}
+.meny a:hover:before {
+ width:90%; /*overgangen skal dekke 90% under ordene*/
+}
+.tilgjengelighet a{
+ text-decoration: none; /*ingen tekstdekorasjon*/
+ color: white;
+ padding: 10px 20px;/*padding på boksen*/
+ font-size: 2vw;/*endre til vw for å skale*/
+ background: indianred;
+ border-radius: 8px; /*lager en border*/
+ transition: 0.4s;
+}
+.tilgjengelighet a:hover {
+ background: transparent;
+ border: 1px solid indianred; /*lager overgang når man holder musen oppe på tilgjengilehetskanppen
+ bruker denne malen til knappen i midten*/
+}
+.heading-text {
+ max-width: 650px;
+ position: absolute;
+ top: 50%;
+ left:50%;
+ transform: translate(-50%,-50%);
+ text-align: center;
+ color: white;
+}
+.heading-text span {
+ letter-spacing: 5px;
+}
+.heading-text h1 {
+ font-size: 3.5vw;
+}
+.heading-text a {
+ text-decoration: none;
+ background-color: indianred;
+ color: white;
+ padding: 10px 20px;
+ letter-spacing: 5px;
+ transition: 0.4s;
+}
+.heading-text a:hover {
+ background: transparent;
+ border: 1px solid indianred; 
+}
