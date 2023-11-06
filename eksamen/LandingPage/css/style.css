@@ -17,8 +17,10 @@ nav { /*oppretter en navbar*/
  font-family: sans-serif;
 }
 .logo {
- font-size: 3vw;
- letter-spacing: 2px;
+    width: 15vw;
+    margin-left: 0;
+    
+
 }
 .meny a{
  text-decoration: none;
@@ -34,7 +36,7 @@ nav { /*oppretter en navbar*/
  left:0;
  width:0%;
  height: 100%;
- border-bottom: 2px solid yellow;
+ border-bottom: 2px solid indianred;
  transition: 0.4s linear; /*den skal bruke 0.4 sekunder*/
 }
 .meny a:hover:before {
@@ -45,13 +47,13 @@ nav { /*oppretter en navbar*/
  color: white;
  padding: 10px 20px;/*padding på boksen*/
  font-size: 2vw;/*endre til vw for å skale*/
- background: yellowgreen;
+ background: indianred;
  border-radius: 8px; /*lager en border*/
  transition: 0.4s;
 }
 .tilgjengelighet a:hover {
  background: transparent;
- border: 1px solid yellow; /*lager overgang når man holder musen oppe på tilgjengilehetskanppen
+ border: 1px solid indianred; /*lager overgang når man holder musen oppe på tilgjengilehetskanppen
  bruker denne malen til knappen i midten*/
 }
 .heading-text {
@@ -71,13 +73,13 @@ nav { /*oppretter en navbar*/
 }
 .heading-text a {
  text-decoration: none;
- background-color: yellowgreen;
+ background-color: indianred;
  color: white;
  padding: 10px 20px;
  letter-spacing: 5px;
  transition: 0.4s;
 }
 .heading-text a:hover {
- background: transparent; /*bakgrunnen skal være transparent*/
- border: 1px solid yellow; 
+ background: transparent;
+ border: 1px solid indianred; 
 }
