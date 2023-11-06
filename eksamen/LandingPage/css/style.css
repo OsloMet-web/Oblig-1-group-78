@@ -78,6 +78,6 @@ nav { /*oppretter en navbar*/
  transition: 0.4s;
 }
 .heading-text a:hover {
- background: transparent;
+ background: transparent; /*bakgrunnen skal være transparent*/
  border: 1px solid yellow; 
 }
