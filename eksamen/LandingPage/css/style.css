@@ -211,3 +211,8 @@ at det ser fint ut*/
     cursor: pointer;
     font-size: 18px;
 }
+.google-maps {
+    padding-top: 20px;
+    background-color: white;
+    padding-bottom: 20px;
+}
