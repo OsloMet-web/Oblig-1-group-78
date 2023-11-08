@@ -8,75 +8,92 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div class = "logo">
-                <img src="../img/OsloMet.svg" alt="logo">
-            </div>
-            <div class="meny">
-                <a href="index.html">Hjem</a>
-                <a href="topical.html">Info</a>
-                <a href = "canteen.html">Kantine</a>
-            </div>
-            <div class = "tilgjengelighet">
-                <a href = "accessibility.html">Tilgjengelighet</a>
-            </div>
-
-        </nav>
-        <plass1 class = "heading-text">
-        <span>Oslomet</span>
-        <h1>Utforsk tilgjengelighet på Oslomet</h1>
-        <br>
-        <a href="#">Trykk her</a>
-        </plass1>
-    </header>
-
-    <div class = "kort-container">
-        <div class = "kort">
-        <img src="../img/hio11.jpg">
-        <div class = "kort-innhold"> 
-            <h3>Kantine</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium eligendi aperiam tempora, molestias, 
-                illum incidunt quidem quasi eos saepe suscipit distinctio magni natus maiores odio rem atque perspiciatis 
-                consectetur dolore.</p>
-                <a href = "../html/canteen.html" class="kort-link">Les Mer</a>
-        </div>
-        </div>
-
-        <div class = "kort">
-            <img src="../img/hio11.jpg">
-                <div class = "kort-innhold"> 
-                    <h3>Info</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium eligendi aperiam tempora, molestias, 
-                        illum incidunt quidem quasi eos saepe suscipit distinctio magni natus maiores odio rem atque perspiciatis 
-                        consectetur dolore.</p>
-                        <a href = "../html/topical.html" class="kort-link">Les Mer</a>
-                </div>  
-            </div>
-
-            <div class = "kort">
-                <img src="../img/hio11.jpg">
-                    <div class = "kort-innhold"> 
-                        <h3>Card 3</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium eligendi aperiam tempora, molestias, 
-                            illum incidunt quidem quasi eos saepe suscipit distinctio magni natus maiores odio rem atque perspiciatis 
-                            consectetur dolore.</p>
-                            <a href = "" class="kort-link">Les Mer</a>
-                    </div>
+        <!-- Header-seksjon som inneholder navigasjon og overskrift -->
+        <header>
+            <!-- Navigasjonsside med logo og meny -->
+            <nav>
+                <div class="logo">
+                    <img src="../img/OsloMet.svg" alt="logo">
                 </div>
-     </div>
-<div class = "google-maps">
+                <div class="meny">
+                    <!-- Navigasjonsmenylenker -->
+                    <a href="index.html">Hjem</a>
+                    <a href="topical.html">Info</a>
+                    <a href="canteen.html">Kantine</a>
+                </div>
+                <div class="tilgjengelighet">
+                    <!-- Tilgjengelighetslenke -->
+                    <a href="accessibility.html">Tilgjengelighet</a>
+                </div>
+            </nav>
+            <!-- Overskrift og undertittel-seksjon -->
+            <plass1 class="heading-text">
+                <span>Oslomet</span>
+                <h1>Utforsk tilgjengelighet på Oslomet</h1>
+                <br>
+                <!-- Lenke for oppfordring til handling -->
+                <a href="#">Trykk her</a>
+            </plass1>
+        </header>
+        
+        <div class="kort-container">
+            <!-- Kortseksjon -->
+            <div class="kort">
+                <img src="../img/hio11.jpg">
+                <div class="kort-innhold">
+                    <h3>Kantine</h3>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium eligendi aperiam tempora, 
+                        molestias, illum incidunt quidem quasi eos saepe suscipit distinctio magni natus maiores odio rem 
+                        atque perspiciatis consectetur dolore.
+                    </p>
+                    <a href="../html/canteen.html" class="kort-link">Les Mer</a>
+                </div>
+            </div>
+            <div class="kort">
+                <img src="../img/hio11.jpg">
+                <div class="kort-innhold">
+                    <h3>Info</h3>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium eligendi aperiam tempora, 
+                        molestias, illum incidunt quidem quasi eos saepe suscipit distinctio magni natus maiores odio rem 
+                        atque perspiciatis consectetur dolore.
+                    </p>
+                    <a href="../html/topical.html" class="kort-link">Les Mer</a>
+                </div>
+            </div>
+            <div class="kort">
+                <img src="../img/hio11.jpg">
+                <div class="kort-innhold">
+                    <h3>Card 3</h3>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium eligendi aperiam tempora, 
+                        molestias, illum incidunt quidem quasi eos saepe suscipit distinctio magni natus maiores odio rem 
+                        atque perspiciatis consectetur dolore.
+                    </p>
+                    <a href="" class="kort-link">Les Mer</a>
+                </div>
+            </div>
+        </div>
+        
+
+<!-- hele google maps og kontakt oss er inni denne div klassen,
+     har lagd denne for å sette bakgrunnsfargen til hvit,
+    fordi i body har vi lagt til et bilde-->
+<div class = "google-maps"> 
      <div class="contact-in">
-        <div class="contact-map">
+        <div class="Kontakt-kart">
+            <!-- denne linken er hentet fra google maps, den er autogenerert-->
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7998.4940167956765!2d10.724360943959402!3d59.92179555439851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416fe476bb6a77%3A0x9ece5245a8cfbbb2!2sOsloMet%20-%20Fakultet%20for%20l%C3%A6rerutdanning%20og%20internasjonale%20studier!5e0!3m2!1sno!2sno!4v1699391974460!5m2!1sno!2sno"
                 width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <div class="contact-form">
+        <div class="Kontakt-Skjema">
             <h1>Kontakt oss</h1>
             <form>
-                <input type="text" placeholder="Name" class="contact-form-txt" />
-                <input type="text" placeholder="Email" class="contact-form-txt" />
-                <textarea placeholder="Message" class="contact-form-txtarea"></textarea>
-                <input type="submit" value="Submit" class="contact-form-btn" />
+                <input type="text" placeholder="Navn" class="Kontakt-Skjema-txt" />
+                <input type="text" placeholder="E-mail" class="Kontakt-Skjema-txt" />
+                <textarea placeholder="Melding" class="Kontakt-Skjema-txtOmråde"></textarea>
+                <input type="submit" value="Submit" class="Kontakt-Skjema-link" />
             </form>
         </div>
     </div>
