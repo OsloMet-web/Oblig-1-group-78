@@ -6,7 +6,7 @@
 }
 
 /* Stil for overskriften (header) */
-header {
+.fullsize{
     width: 100%; /* Full bredde */
     height: 100vh; /* Høyde er 100% av viewport-høyden */
 }
@@ -29,6 +29,16 @@ nav {
     justify-content: space-around; /* Fordeler plasseringen av elementer jevnt rundt */
     align-items: center; /* Sentrerer elementer vertikalt i navbar */
     font-family: sans-serif; /* Bruker en generisk sans-serif skrifttype */
+}
+.nav-spisesteder{
+    width: 100%; /* Full bredde */
+    height: 100px; /* Høyde på 100 piksler */
+    color: white; /* Tekstfarge hvit */
+    display: flex; /* Bruker Flexbox for layoutkontroll */
+    justify-content: space-around; /* Fordeler plasseringen av elementer jevnt rundt */
+    align-items: center; /* Sentrerer elementer vertikalt i navbar */
+    font-family: sans-serif; /* Bruker en generisk sans-serif skrifttype */
+    background-color: #000000e3;
 }
 
 /* Stil for logoen */
@@ -283,4 +293,27 @@ at det ser fint ut */
     padding-top: 20px; /* 20 piksler øverst for ekstra mellomrom */
     background-color: white; /* Hvit bakgrunnsfarge */
     padding-bottom: 20px; /* 20 piksler nederst for ekstra mellomrom */
+}
+
+.info-spisesteder {
+    margin-top: 5vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    font-size: larger;
+    line-height: 40px;
+    letter-spacing: 2px;
+    border-style: dashed;
+    border-color: #0000001f;
+    padding: 20px;
+    border-radius: 25px;
+    
+
+    
+   
+
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    margin: 0px;
 }
