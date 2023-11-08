@@ -176,7 +176,7 @@ h3 {
 /* Stil for bilder inne i kortene */
 .kort img {
     width: 100%; /* Skalerer bildet til å passe innenfor kortets bredde */
-    height: auto; /* Auto-justering av høyde for å bevare bildets proporsjoner */
+    height: 67%; /* Auto-justering av høyde for å bevare bildets proporsjoner */
 }
 
 
