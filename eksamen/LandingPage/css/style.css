@@ -12,7 +12,7 @@ header {
 }
 
 /* Stil for hele siden (body) med en bakgrunnsgradient og et bakgrunnsbilde */
-body {
+.bakgrunnsbilde {
     background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.2)), url(../img/oslomet-logo-graavegg-2400x1200.jpg);
     /* Bakgrunn med en gradient og et bilde */
     background-size: cover; /* Skalering av bakgrunnen for å dekke hele vinduet */
