@@ -302,11 +302,9 @@ at det ser fint ut */
     font-size: larger;
     line-height: 40px;
     letter-spacing: 2px;
-    border-style: dashed;
-    border-color: #0000001f;
-    padding: 20px;
-    border-radius: 25px;
     
+    
+
 
     
    
@@ -316,4 +314,7 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1rem;
     margin: 0px;
+}
+.adresse-link{
+    color: #2d57b1d0;
 }
