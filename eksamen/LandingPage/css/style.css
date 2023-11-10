@@ -290,9 +290,9 @@ at det ser fint ut */
 
 /* Stil for Google Maps-container */
 .google-maps {
-    padding-top: 20px; /* 20 piksler øverst for ekstra mellomrom */
+    padding-top: 2%; /* 2% øverst for ekstra mellomrom */
     background-color: white; /* Hvit bakgrunnsfarge */
-    padding-bottom: 20px; /* 20 piksler nederst for ekstra mellomrom */
+    padding-bottom: 5%; /* 2% nederst for ekstra mellomrom */
 }
 
 .info-spisesteder {
@@ -302,14 +302,8 @@ at det ser fint ut */
     font-size: larger;
     line-height: 40px;
     letter-spacing: 2px;
-    
-    
-
-
-    
-   
-
 }
+
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1rem;
@@ -317,4 +311,47 @@ body {
 }
 .adresse-link{
     color: #2d57b1d0;
+}
+
+/* Stil for hovedbeholderen */
+.Kontainer-hovedbeholder {
+    padding: 2rem; /* Luftplass rundt innholdet */
+    background-color: #fff; /* Bakgrunnsfarge */
+}
+
+/* Synlighetsområde for sliderinnholdet */
+.slider-synlighet {
+    position: relative; /* Relativ posisjon for innholdet */
+    max-width: 55rem; /* Maksimumsbredde for innholdet */
+    margin: 0 auto; /* Sentrering av synlighetsområdet */
+}
+
+/* Stil for selve bildeslideren */
+.slider {
+    display: flex; /* Viser bildene i en rad */
+    aspect-ratio: 16/9; /* Sideforhold 16:9 for bildene */
+    overflow-x: auto; /* Horisontal rulling for bilder som går utover bredden */
+    scroll-snap-type: x mandatory; /* Rulling av bilder med "snap" */
+    scroll-behavior: smooth; /* Smidig rulling mellom bilder */
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25); /* Skyggeeffekt for slideren */
+    border-radius: 0.5rem; /* Avrundede hjørner for slideren */
+}
+
+/* Bilder i slideren */
+.slider img {
+    flex: 1 0 100%; /* Bilder strekker seg for å fylle sliderens bredde */
+    scroll-snap-align: start; /* Bilder ruller til starten av synlighetsområdet */
+    object-fit: cover; /* Bilder tilpasses og dekker hele bildeområdet */
+}
+
+/* Definerer stilen for elementet med klassenavn "p.utforsk" */
+p.utforsk {
+    background-color: #fff; /* Setter bakgrunnsfargen til hvit */
+    text-align: center; /* Sentrerer teksten innenfor elementet */
+    font-family: sans-serif; /* Velger skriftfamilien til sans-serif */
+    text-decoration: none; /* Fjerner eventuell understrekning/dekorasjon på lenker (selv om dette gjelder vanligvis for lenker, kan det være brukt for å unngå understrekning på teksten) */
+    font-size: 2.5vw; /* Angir størrelsen på skriften relativt til visningsvinduets bredde */
+    padding-top: 3.5rem; /* Legger til en øvre padding på 3.5rem for å skape mellomrom mellom innholdet og toppen av elementet, det ser bedre ut med luft */
+    padding-bottom: 1rem; /* Legger til en nedre padding på 1.7rem for å skape mellomrom mellom innholdet og bunnen av elementet */
+    letter-spacing: 0.2vw; /* Angir avstanden mellom bokstavene relativt til visningsvinduets bredde */
 }
