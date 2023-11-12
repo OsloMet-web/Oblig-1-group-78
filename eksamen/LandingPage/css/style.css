@@ -47,6 +47,21 @@ nav {
     margin-left: 0; /* Null margintilpasning til venstre */
 }
 
+.logo a::before {
+    content: ''; /* Inneholdet er tomt (brukes for visuell effekt) */
+    position: absolute; /* Absolutt posisjonering i forhold til lenken */
+    top: 0; /* Plasserer øverst i lenken */
+    left: 0; /* Plasserer til venstre i lenken */
+    width: 0%; /* Startbredden er 0% */
+    border-top: 7px solid yellowgreen; /* Gul bunnkant med 2 piksler tykkelse */
+    transition: 0.4s linear; /* Overgangseffekt over 0.4 sekunder (lineær bevegelse) */
+}
+
+/* Stil for pseudo-elementet 'before' i lenkene ved hover-tilstand */
+.logo a:hover:before {
+width: 100%; /* Bredden utvides til 90% under lenkens ord ved hover-tilstand */
+}
+
 /* Stil for artikkel-elementer */
 article {
     background-color: rgba(70, 70, 70); /* Bakgrunnsfarge i en mørk gråfarge med gjennomsiktighet */
@@ -97,6 +112,7 @@ h3 {
 .meny a:hover:before {
     width: 90%; /* Bredden utvides til 90% under lenkens ord ved hover-tilstand */
 }
+
 
 /* Stil for lenker i tilgjengelighetsseksjonen */
 .tilgjengelighet a {
