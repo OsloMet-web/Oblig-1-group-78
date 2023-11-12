@@ -69,14 +69,14 @@ article {
     color:rgba(36,37,38);/* Tekstfarge i en lys kremfarge med gjennomsiktighet */
     border-radius: 10px; /* Avrundede hjørner med radius på 10 piksler */
 }
-/* id for tre bokser i siden "topical.html" */
-#boks-1{
+/* id for tre infobokser i siden "topical.html" */
+#infoboks-1{
     background-color: rgb(256,212,4); /* gul bakgrunnsfarge i boksen*/
 }
-#boks-2{
+#infoboks-2{
     background-color:rgb(207, 122, 24);/* oransje bakgrunnsfarge i boksen*/
 }
-#boks-3{
+#infoboks-3{
     background-color: rgb(255, 255, 255); /* hvit bakgrunnsfarge i boksen*/
 }
 /* Stil for overskrift (h2) innenfor artikkel-elementer */
