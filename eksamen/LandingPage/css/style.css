@@ -92,7 +92,8 @@ h2 {
 
 /* Stil for overskrift (h3) generelt */
 h3 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Skriftfamilie */
+    font-family: 'Calibri', 'Gill Sans MT', 'Trebuchet MS', sans-serif; /* Skriftfamilie */
+    font-weight: 520; /*Skrift tykkelse gjør det mer tilpasset for brukeren */
 }
 
 /* Stil for lenker i menyen */
