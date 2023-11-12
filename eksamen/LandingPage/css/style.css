@@ -64,13 +64,21 @@ width: 100%; /* Bredden utvides til 90% under lenkens ord ved hover-tilstand */
 
 /* Stil for artikkel-elementer */
 article {
-    background-color: rgba(70, 70, 70); /* Bakgrunnsfarge i en mørk gråfarge med gjennomsiktighet */
     padding: 2rem; /* 2 rem (fontstørrelse) padding på alle sider */
-    margin-top: 2rem; /* 2 rem margin øverst for avstand fra andre elementer */
-    color: rgba(235, 235, 210); /* Tekstfarge i en lys kremfarge med gjennomsiktighet */
+    margin-top: 0.5rem;/* 0.5 rem margin øverst for avstand fra andre elementer */
+    color:rgba(36,37,38);/* Tekstfarge i en lys kremfarge med gjennomsiktighet */
     border-radius: 10px; /* Avrundede hjørner med radius på 10 piksler */
 }
-
+/* id for tre bokser i siden "topical.html" */
+#boks-1{
+    background-color: rgb(256,212,4); /* gul bakgrunnsfarge i boksen*/
+}
+#boks-2{
+    background-color:rgb(207, 122, 24);/* oransje bakgrunnsfarge i boksen*/
+}
+#boks-3{
+    background-color: rgb(255, 255, 255); /* hvit bakgrunnsfarge i boksen*/
+}
 /* Stil for overskrift (h2) innenfor artikkel-elementer */
 article > h2 {
     margin-bottom: 1rem; /* 1 rem bunnmargin for avstand fra påfølgende innhold */
