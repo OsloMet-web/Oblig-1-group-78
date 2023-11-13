@@ -53,7 +53,9 @@ nav {
     top: 0; /* Plasserer øverst i lenken */
     left: 0; /* Plasserer til venstre i lenken */
     width: 0%; /* Startbredden er 0% */
-    border-top: 7px solid yellowgreen; /* Gul bunnkant med 2 piksler tykkelse */
+    border-top: 7px;  /* 7 piksler tykkelse */
+    border-top-color: rgb(154,205,50);/* Lysegrønn bunnkant */
+    border-top-style: solid;/* en rett solid linje */
     transition: 0.4s linear; /* Overgangseffekt over 0.4 sekunder (lineær bevegelse) */
 }
 
@@ -175,7 +177,9 @@ h3 {
 /* Stil for lenker i overskriftsteksten ved hover-tilstand */
 .heading-text a:hover {
     background: transparent; /* Gjennomsiktig bakgrunn ved hover */
-    border: 1px solid yellow; /* Legger til en gul kant ved hover-tilstand */
+    border: 1px; /*1px tykk kant ved hover tilstand*/
+    border-style: solid; /*en solid rett strek*/
+    border-color:  yellow; /*gul farget kant*/
 }
 
 /* Stil for kontaineren som inneholder kortene */
@@ -272,7 +276,9 @@ at det ser fint ut */
     width: 100%;
     height: 40px; /*høyden til input boks*/
     color: #000;/*svart linje rundt*/
-    border: 1px solid #bcbcbc; /*1px tjukk linje*/
+    border: 1px;/*1px tykk kant*/
+    border-style: solid; /*en solid rett strek*/
+    border-color:  #bcbcbc; /*hvit farget kant*/
     border-radius: 50px; /*avrunder kanter*/
     /* Fjerner fokusrammen, setter bunnmargen til 20px og legger til 15px padding */
     outline: none;
@@ -290,7 +296,9 @@ at det ser fint ut */
     width: 100%; /* Full bredde */
     height: 130px; /* Fast høyde på 130 piksler */
     color: #000; /* Tekstfarge er svart */
-    border: 1px solid #bcbcbc; /* En piksel tykk, solid, lys grå ramme */
+    border: 1px;/*1px tykk kant*/
+    border-style: solid; /*en solid rett strek*/
+    border-color:  #bcbcbc; /*hvit farget kant*/
     border-radius: 50px; /* Avrundede hjørner med radius på 50 piksler */
     outline: none; /* Fjerner fokusrammen */
     margin-bottom: 20px; /* Bunnmargin på 20 piksler */
