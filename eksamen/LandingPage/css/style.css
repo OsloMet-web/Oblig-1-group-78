@@ -296,7 +296,7 @@ at det ser fint ut */
     width: 100%; /* Full bredde */
     height: 130px; /* Fast høyde på 130 piksler */
     color: #000; /* Tekstfarge er svart */
-    border: 1px;/*1px tykk kant*/
+    border: 1px;/* 1px tykk kant */
     border-style: solid; /*en solid rett strek*/
     border-color:  #bcbcbc; /*hvit farget kant*/
     border-radius: 50px; /* Avrundede hjørner med radius på 50 piksler */
@@ -387,4 +387,72 @@ p.utforsk {
     padding-top: 3.5rem; /* Legger til en øvre padding på 3.5rem for å skape mellomrom mellom innholdet og toppen av elementet, det ser bedre ut med luft */
     padding-bottom: 1rem; /* Legger til en nedre padding på 1.7rem for å skape mellomrom mellom innholdet og bunnen av elementet */
     letter-spacing: 0.2vw; /* Angir avstanden mellom bokstavene relativt til visningsvinduets bredde */
+}
+
+/* Stiler for det første bildet */
+img.bilde-index {
+    max-width: 50%;        /* Setter maksimal bredde for bildet til 50% av beholderen */
+    min-width: 320px;      /* Setter minimumsbredde for bildet til 320 piksler */
+    float: left;           /* Flyter bildet til venstre, slik at tekst kan omslutte det */
+    border-radius: 10px;   /* Bruker en border-radius på 10 piksler, som skaper avrundede hjørner */
+    margin-right: 1.5rem;  /* Setter høyre marg til å lage plass mellom bildet og andre elementer */
+}
+
+/* Stiler for det første tekstområdet */
+.tekst-område1 {
+    background-color: #fff;    /* Setter bakgrunnsfargen til tekstområdet til hvit */
+    margin-top: 100px;         /* Setter toppmarg til å skape plass over tekstområdet */
+    margin-bottom: 150px;      /* Setter bunnmarg til å skape plass under tekstområdet */
+    width: 70%;                /* Setter bredden til tekstområdet til 70% av beholderen */
+    margin-left: 15%;          /* Setter venstremarg til å sentrere tekstområdet i beholderen */
+}
+
+/* Stiler for teksten innenfor det første tekstområdet */
+.text-boks {
+    color: black;             /* Setter teksten til svart */
+}
+
+.text-boks h2 {
+    font-size: 42px;          /* Setter skriftstørrelsen for overskrift til 42 piksler */
+}
+
+.text-boks p {
+    font-size: 16px;          /* Setter skriftstørrelsen for avsnitt til 16 piksler */
+    margin-top: 0.2rem;       /* Setter toppmarg for avsnitt for å finjustere avstanden */
+    letter-spacing: 0.1vw;    /* Setter avstand mellom bokstavene til 0.1 visuell breddeenhet */
+    font-family: sans-serif;  /* Bruker en sans-serif skrifttype */
+}
+
+/* Stiler for det andre bildet */
+img.bilde-index2 {
+    max-width: 50%;        /* Setter maksimal bredde for bildet til 50% av beholderen */
+    min-width: 320px;      /* Setter minimumsbredde for bildet til 320 piksler */
+    float: right;          /* Flyter bildet til høyre */
+    margin-left: 1rem;     /* Setter venstremarg for å lage plass mellom bildet og andre elementer */
+    border-radius: 10px;   /* Bruker en border-radius på 10 piksler, som skaper avrundede hjørner */
+}
+
+/* Stiler for det andre tekstområdet */
+.tekst-område2 {
+    background-color: #fff;    /* Setter bakgrunnsfargen til tekstområdet til hvit */
+    margin-top: 200px;         /* Setter toppmarg for å skape plass over tekstområdet */
+    margin-bottom: 150px;      /* Setter bunnmarg for å skape plass under tekstområdet */
+    width: 70%;                /* Setter bredden til tekstområdet til 70% av beholderen */
+    margin-left: 15%;          /* Setter venstremarg for å sentrere tekstområdet i beholderen */
+}
+
+/* Stiler for teksten innenfor det andre tekstområdet */
+.text-boks2 {
+    color: black;             /* Setter teksten til svart */
+}
+
+.text-boks2 h2 {
+    font-size: 42px;          /* Setter skriftstørrelsen for overskrift til 42 piksler */
+}
+
+.text-boks2 p {
+    font-size: 16px;          /* Setter skriftstørrelsen for avsnitt til 16 piksler */
+    margin-top: 0.2rem;       /* Setter toppmarg for avsnitt for å finjustere avstanden */
+    letter-spacing: 0.1vw;    /* Setter avstand mellom bokstavene til 0.1 visuell breddeenhet */
+    font-family: sans-serif;  /* Bruker en sans-serif skrifttype */
 }
