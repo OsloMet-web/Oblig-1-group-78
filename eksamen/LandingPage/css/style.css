@@ -85,6 +85,13 @@ article {
 article > h2 {
     margin-bottom: 1rem; /* 1 rem bunnmargin for avstand fra påfølgende innhold */
 }
+.testimg-size{
+    margin-top: 0.5rem;/* 0.5 rem margin øverst for avstand fra andre elementer */
+    width:100%;
+}
+.tekstboks-skrift{
+    color:rgb(214, 213, 213)
+}
 
 /* Stil for overskrift (h2) generelt */
 h2 {
