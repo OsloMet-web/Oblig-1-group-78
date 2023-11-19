@@ -322,29 +322,35 @@ at det ser fint ut */
 }
 
 /* Stil for Google Maps-container */
+/* 1vw tilsvarer 1% av skjermens synlig skjermbredde */
 .google-maps {
     padding-top: 2%; /* 2% øverst for ekstra mellomrom */
     background-color: white; /* Hvit bakgrunnsfarge */
     padding-bottom: 5%; /* 2% nederst for ekstra mellomrom */
 }
 
+/* Stil for informasjon om spisesteder */
 .info-spisesteder {
-    margin-top: 5vw;
-    margin-left: 15vw;
-    margin-right: 15vw;
-    font-size: larger;
-    line-height: 40px;
-    letter-spacing: 2px;
+    margin-top: 5vw; /* 5% marg fra toppen relativt til viewport-bredde */
+    margin-left: 15vw; /* 15% marg fra venstre relativt til viewport-bredde */
+    margin-right: 15vw; /* 15% marg fra høyre relativt til viewport-bredde */
+    font-size: larger; /* Større skriftstørrelse */
+    line-height: 40px; /* Linjehøyde på 40 piksler */
+    letter-spacing: 2px; /* Bokstavavstand på 2 piksler */
 }
 
+/* Kroppsstil */
 body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 1rem;
-    margin: 0px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Skrifttype for kroppen */
+    font-size: 1rem; /* Grunnleggende skriftstørrelse på 1 rem */
+    margin: 0px; /* Fjern standardmargin */
 }
-.adresse-link{
-    color: #2d57b1d0;
+
+/* Stil for adressekoblinger */
+.adresse-link {
+    color: #2d57b1d0; /* Sett fargen på adressekoblinger */
 }
+
 
 /* Stil for hovedbeholderen */
 .Kontainer-hovedbeholder {
