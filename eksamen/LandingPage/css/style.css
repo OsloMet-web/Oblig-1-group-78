@@ -67,9 +67,7 @@ width: 100%; /* Bredden utvides til 90% under lenkens ord ved hover-tilstand */
 /* Stil for artikkel-elementer */
 article {
     padding: 2rem; /* 2 rem (fontstørrelse) padding på alle sider */
-    margin-top: 0.5rem;/* 0.5 rem margin øverst for avstand fra andre elementer */
     color:rgba(36,37,38);/* Tekstfarge i en lys kremfarge med gjennomsiktighet */
-    border-radius: 10px; /* Avrundede hjørner med radius på 10 piksler */
 }
 /* id for tre infobokser i siden "topical.html" */
 #infoboks-1{
@@ -89,8 +87,8 @@ article > h2 {
     margin-top: 0.5rem;/* 0.5 rem margin øverst for avstand fra andre elementer */
     width:100%;
 }
-.tekstboks-skrift{
-    color:rgb(214, 213, 213)
+.tekstboks-skrift{ /*hvit skrift for brukervennlighet*/
+    color:rgb(214, 213, 213) 
 }
 /* Stil for overskrift (h2) generelt */
 h2 {
