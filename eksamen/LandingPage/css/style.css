@@ -406,10 +406,12 @@ img.bilde-index {
     width: 70%;                /* Setter bredden til tekstområdet til 70% av beholderen */
     margin-left: 15%;          /* Setter venstremarg til å sentrere tekstområdet i beholderen */
 }
-
+main {
+    background-color: white;
+}
 /* Stiler for teksten innenfor det første tekstområdet */
 .text-boks {
-    color: black;             /* Setter teksten til svart */
+    color: black;          /* Setter teksten til svart */
 }
 
 .text-boks h2 {
@@ -455,4 +457,101 @@ img.bilde-index2 {
     margin-top: 0.2rem;       /* Setter toppmarg for avsnitt for å finjustere avstanden */
     letter-spacing: 0.1vw;    /* Setter avstand mellom bokstavene til 0.1 visuell breddeenhet */
     font-family: sans-serif;  /* Bruker en sans-serif skrifttype */
+}
+
+
+
+/* Stil for footer-elementet */
+footer {
+    background-color: #111; /* Setter bakgrunnsfargen for footer */
+}
+
+/* Stil for beholderen innenfor footer */
+.footerKontainer {
+    width: 100%; /* Gjør beholderen like bred som forelder-elementet sitt */
+    padding: 70px 30px 20px; /* Setter padding for beholderen (topp, høyre, bunn) */
+}
+
+/* Stil for beholderen til sosiale medieikoner */
+.sosialeMediaIkoner {
+    display: flex; /* Bruker flexbox for layout */
+    justify-content: center; /* Sentrerer barneelementene horisontalt */
+}
+
+/* Stil for lenkene til sosiale medieikoner */
+.sosialeMediaIkoner a {
+    text-decoration: none; /* Fjerner understreking fra lenkene */
+    padding: 10px; /* Legger til padding rundt ikonene */
+    background-color: white; /* Setter bakgrunnsfarge for ikonene */
+    margin: 10px; /* Legger til margin rundt ikonene */
+    border-radius: 50%; /* Gjør ikonene sirkulære ved å sette border-radius til 50% */
+}
+
+/* Stil for selve sosiale medieikonene */
+.sosialeMediaIkoner a i {
+    font-size: 2em; /* Setter fontstørrelse for ikonene */
+    color: black; /* Setter fargen på ikonene */
+    opacity: 0.9; /* Setter gjennomsiktighet for ikonene */
+}
+
+/* Hover-effekt på sosiale medieikoner */
+.sosialeMediaIkoner a:hover {
+    background-color: #111; /* Endrer bakgrunnsfargen ved hover */
+    transition: 0.5s; /* Legger til overgangseffekt med varighet 0.5 sekunder */
+}
+.sosialeMediaIkoner a:hover i {
+    color: white; /* Endrer fargen på ikonene til hvitt ved hover */
+    transition: 0.5s; /* Legger til overgangseffekt med varighet 0.5 sekunder */
+}
+
+/* Stil for footer-navigasjonsfeltet */
+.footerNavbar {
+    margin: 30px 0; /* Legger til marging (avstand) over og under navigasjonsfeltet */
+}
+.footerNavbar ul {
+    display: flex; /* Bruker flexbox for layout */
+    justify-content: center; /* Sentrerer lenkene horisontalt */
+    list-style: none; /* Fjerner punkter for listen */
+}
+.footerNavbar ul li a {
+    color: white; /* Setter fargen på lenkene til hvitt */
+    margin: 20px; /* Legger til margin rundt lenkene */
+    text-decoration: none; /* Fjerner understreking fra lenkene */
+    font-size: 1.3em; /* Setter fontstørrelse til 1.3em */
+    opacity: 0.7; /* Setter gjennomsiktighet til 0.7 */
+    transition: 0.5s; /* Legger til overgangseffekt med varighet 0.5 sekunder */
+}
+.footerNavbar ul li a:hover {
+    opacity: 1; /* Endrer gjennomsiktighet til 1 ved hover */
+}
+
+/* Stil for nedre del av footer */
+.footerNedreDel {
+    background-color: #000; /* Setter bakgrunnsfargen til svart */
+    padding: 20px; /* Legger til padding (fyll) rundt innholdet */
+    text-align: center; /* Sentrerer teksten */
+}
+.footerNedreDel p {
+    color: white; /* Setter teksten til hvitt */
+}
+
+/* Stil for designer-informasjonen */
+.designer {
+    opacity: 0.7; /* Setter gjennomsiktighet til 0.7 */
+    text-transform: uppercase; /* Gjør teksten til store bokstaver */
+    letter-spacing: 1px; /* Legger til litt avstand mellom bokstavene */
+    font-weight: 400; /* Setter font-weight til 400 (normal) */
+    margin: 0px 5px; /* Legger til margin (avstand) rundt teksten */
+}
+
+/* Bruker media query for å gjøre footer responsiv på små skjermer */
+@media (max-width: 700px) {
+    .footerNav ul {
+        flex-direction: column; /* Endrer retningen til kolonne ved lav skjermstørrelse */
+    }
+    .footerNav ul li {
+        width: 100%; /* Gjør lenkene like brede som forelder-elementet */
+        text-align: center; /* Sentrerer lenkene horisontalt */
+        margin: 10px; /* Legger til margin (avstand) rundt lenkene */
+    }
 }
