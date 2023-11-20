@@ -13,9 +13,17 @@
 }
 
 /* Stil for hele siden (body) med en bakgrunnsgradient og et bakgrunnsbilde */
-.bakgrunnsbilde {
-    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.2)), url(../img/oslomet-logo-graavegg-2400x1200.jpg);
+.bakgrunnsbilde-oslomet{
+    
     background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.2)), url(../img/oslomet-logo.jpg);
+    /* Bakgrunn med en gradient og et bilde */
+    background-size: cover; /* Skalering av bakgrunnen for å dekke hele vinduet */
+    background-repeat: no-repeat; /* Ingen repetisjon av bakgrunnsbildet */
+    background-attachment: fixed; /* Bakgrunnen er festet og scroller ikke med innholdet */
+}
+.bakgrunnsbilde-satelitt{
+    
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.2)), url(../img/starlink-satelitt.jpg);
     /* Bakgrunn med en gradient og et bilde */
     background-size: cover; /* Skalering av bakgrunnen for å dekke hele vinduet */
     background-repeat: no-repeat; /* Ingen repetisjon av bakgrunnsbildet */
