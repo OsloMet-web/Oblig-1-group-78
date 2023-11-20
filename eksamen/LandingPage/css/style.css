@@ -563,10 +563,10 @@ at det ser fint ut */
 
 /* Bruker media query for å gjøre footer responsiv på små skjermer */
 @media (max-width: 700px) {
-    .footerNav ul {
+    .footerNavbar ul {
         flex-direction: column; /* Endrer retningen til kolonne ved lav skjermstørrelse */
     }
-    .footerNav ul li {
+    .footerNavbar ul li {
         width: 100%; /* Gjør lenkene like brede som forelder-elementet */
         text-align: center; /* Sentrerer lenkene horisontalt */
         margin: 10px; /* Legger til margin (avstand) rundt lenkene */
