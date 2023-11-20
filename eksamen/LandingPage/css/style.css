@@ -215,7 +215,7 @@ h3 {
 /* Stil for bilder inne i kortene */
 .kort img {
     width: 100%; /* Skalerer bildet til å passe innenfor kortets bredde */
-    height: 67%; /* Auto-justering av høyde for å bevare bildets proporsjoner */
+    height: 67%; /* Setter bildene til 2/3 av høyde */
 }
 
 
@@ -584,8 +584,12 @@ at det ser fint ut */
     margin-left: 15vw; /* 15% marg fra venstre relativt til viewport-bredde */
     margin-right: 15vw; /* 15% marg fra høyre relativt til viewport-bredde */
     font-size: larger; /* Større skriftstørrelse */
-    line-height: 40px; /* Linjehøyde på 40 piksler */
+    line-height: 30px; /* Linjehøyde på 30 piksler */
     letter-spacing: 2px; /* Bokstavavstand på 2 piksler */
+}
+.info-spisesteder h1{
+    margin-bottom: 2vw; /*legger margin mellom innledning og hovedskrift*/
+    line-height: 40px; /* Linjehøyde på 40 piksler */
 }
 
 /* Kroppsstil */
@@ -616,11 +620,11 @@ at det ser fint ut */
 }
 
 /* Stil for overskrift (h3) i kortinnhold */
-.spisesteder-innhold h3 {
+.spisesteder-innhold h2 {
     font-size: 28px; /* Skriftstørrelse på 28 piksler */
     margin-bottom: 8px; /* Bunnmargin på 8 piksler for avstand under overskriften */
     font-weight: 550; 
-    color: rgba(0, 0, 0, 0.609);
+    color: rgba(0, 0, 0, 0.6);
 
 }
 
