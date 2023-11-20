@@ -657,7 +657,7 @@ at det ser fint ut */
     background-color: rgba(40, 80, 30, 0.6); /* Mørkere farge får å indikere trykkbarhet */
 }
 p.tekst-accessibility {
-    color: black;
+    color: white;
     text-decoration: none;
     text-align: left; /* Teksten skal gå fra venstre til høyre */
     padding: 1.5rem; /* Avstand mellom bilde og tekst */
@@ -665,6 +665,6 @@ p.tekst-accessibility {
     font-size: 1.5rem;
 }
 h1.overskrift-tilgjengelighet {
-    color:black;
+    color:white;
     padding: 1rem;
 }
