@@ -1,3 +1,4 @@
+
 /* Tilbakestill alle marginer, padding og bruk boksmodellen for alle elementer */
 * {
     padding: 0;
@@ -13,6 +14,7 @@
 
 /* Stil for hele siden (body) med en bakgrunnsgradient og et bakgrunnsbilde */
 .bakgrunnsbilde {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.2)), url(../img/oslomet-logo-graavegg-2400x1200.jpg);
     background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.2)), url(../img/oslomet-logo.jpg);
     /* Bakgrunn med en gradient og et bilde */
     background-size: cover; /* Skalering av bakgrunnen for å dekke hele vinduet */
@@ -84,6 +86,13 @@ article {
 /* Stil for overskrift (h2) innenfor artikkel-elementer */
 article > h2 {
     margin-bottom: 1rem; /* 1 rem bunnmargin for avstand fra påfølgende innhold */
+}
+.testimg-size{
+    margin-top: 0.5rem;/* 0.5 rem margin øverst for avstand fra andre elementer */
+    width:100%;
+}
+.tekstboks-skrift{ /*hvit skrift for brukervennlighet*/
+    color:rgb(214, 213, 213) 
 }
 
 /* Stil for overskrift (h2) generelt */
@@ -322,10 +331,33 @@ at det ser fint ut */
 }
 
 /* Stil for Google Maps-container */
+/* 1vw tilsvarer 1% av skjermens synlig skjermbredde */
 .google-maps {
     padding-top: 2%; /* 2% øverst for ekstra mellomrom */
     background-color: white; /* Hvit bakgrunnsfarge */
     padding-bottom: 5%; /* 2% nederst for ekstra mellomrom */
+}
+
+/* Stil for informasjon om spisesteder */
+.info-spisesteder {
+    margin-top: 5vw; /* 5% marg fra toppen relativt til viewport-bredde */
+    margin-left: 15vw; /* 15% marg fra venstre relativt til viewport-bredde */
+    margin-right: 15vw; /* 15% marg fra høyre relativt til viewport-bredde */
+    font-size: larger; /* Større skriftstørrelse */
+    line-height: 40px; /* Linjehøyde på 40 piksler */
+    letter-spacing: 2px; /* Bokstavavstand på 2 piksler */
+}
+
+/* Kroppsstil */
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Skrifttype for kroppen */
+    font-size: 1rem; /* Grunnleggende skriftstørrelse på 1 rem */
+    margin: 0px; /* Fjern standardmargin */
+}
+
+/* Stil for adressekoblinger */
+.adresse-link {
+    color: #2d57b1d0; /* Sett fargen på adressekoblinger */
 }
 
 
@@ -389,9 +421,13 @@ img.bilde-index {
     width: 70%;                /* Setter bredden til tekstområdet til 70% av beholderen */
     margin-left: 15%;          /* Setter venstremarg til å sentrere tekstområdet i beholderen */
 }
+main {
+    background-color: white;
+}
 
 /* Stiler for teksten innenfor det første tekstområdet */
 .text-boks {
+    color: black;          /* Setter teksten til svart */
     color: black;             /* Setter teksten til svart */
 }
 
@@ -442,28 +478,45 @@ img.bilde-index2 {
 
 /*STIL FOR SPISESTEDER SIDE */
 
-/*Stil for overskrift og innledning til spisestedene */
+
+/* Stil for footer-elementet */
+footer {
+    background-color: #111; /* Setter bakgrunnsfargen for footer */
+}
 .info-spisesteder {
-    margin-top: 5vw; /*Lager margin rundt innholdet i innledningen*/
+    margin-top: 5vw;
     margin-left: 15vw;
     margin-right: 15vw;
-    font-size: larger; /*Gjør teksten mer synlig og lesbar*/
-    line-height: 35px;
-
+    font-size: larger;
+    line-height: 40px;
     letter-spacing: 2px;
 }
-/*velger alle h1 elementer under denne klassen*/
-.info-spisesteder  h1 {
-    margin-bottom: 0.5em; /*legger til litt mellomrom mellom overskrift og innledning*/
-}
 
-.basic-body {
+/* Stil for beholderen innenfor footer */
+.footerKontainer {
+    width: 100%; /* Gjør beholderen like bred som forelder-elementet sitt */
+    padding: 70px 30px 20px; /* Setter padding for beholderen (topp, høyre, bunn) */
+}
+body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1rem;
     margin: 0px;
 }
 
+/* Stil for beholderen til sosiale medieikoner */
+.sosialeMediaIkoner {
+    display: flex; /* Bruker flexbox for layout */
+    justify-content: center; /* Sentrerer barneelementene horisontalt */
+}
 
+/* Stil for lenkene til sosiale medieikoner */
+.sosialeMediaIkoner a {
+    text-decoration: none; /* Fjerner understreking fra lenkene */
+    padding: 10px; /* Legger til padding rundt ikonene */
+    background-color: white; /* Setter bakgrunnsfarge for ikonene */
+    margin: 10px; /* Legger til margin rundt ikonene */
+    border-radius: 50%; /* Gjør ikonene sirkulære ved å sette border-radius til 50% */
+}
 /* Stil for kontaineren som inneholder kortene */
 .container-spisesteder {
     display: flex; /* Bruker Flexbox for layoutkontroll */
@@ -473,31 +526,76 @@ img.bilde-index2 {
     margin-top: 100px; /* Legger til 100 piksler margin øverst for å justere plassering */
 }
 
+/* Stil for selve sosiale medieikonene */
+.sosialeMediaIkoner a i {
+    font-size: 2em; /* Setter fontstørrelse for ikonene */
+    color: black; /* Setter fargen på ikonene */
+    opacity: 0.9; /* Setter gjennomsiktighet for ikonene */
+}
 
+/* Hover-effekt på sosiale medieikoner */
+.sosialeMediaIkoner a:hover {
+    background-color: #111; /* Endrer bakgrunnsfargen ved hover */
+    transition: 0.5s; /* Legger til overgangseffekt med varighet 0.5 sekunder */
+}
+.sosialeMediaIkoner a:hover i {
+    color: white; /* Endrer fargen på ikonene til hvitt ved hover */
+    transition: 0.5s; /* Legger til overgangseffekt med varighet 0.5 sekunder */
 /* Stil for kortinnhold */
+}
 .kort-spisesteder {
     width: 30rem; /* Bredde på 325 piksler */
     background-color: #f0f0f0; /* Bakgrunnsfarge i lys grå */
     border-radius: 8px; /* Avrundede hjørner med radius på 8 piksler */
-    overflow: hidden; /* Skjuler deler av bildene som overskrider kortets ramme */
+    overflow: hidden; /* Skjuler innhold som overskrider kortets ramme */
     box-shadow: 0px 2px 4px rgba(0,0,0,0.2); /* Skyggeeffekt med offset og farge */
-    margin: 25px; /* 25 piksler margin på alle sider for å lage avstand mellom kortene */
+    margin: 20px; /* 20 piksler margin på alle sider for å lage avstand mellom kortene */
 }
 
+/* Stil for footer-navigasjonsfeltet */
+.footerNavbar {
+    margin: 30px 0; /* Legger til marging (avstand) over og under navigasjonsfeltet */
+}
+.footerNavbar ul {
+    display: flex; /* Bruker flexbox for layout */
+    justify-content: center; /* Sentrerer lenkene horisontalt */
+    list-style: none; /* Fjerner punkter for listen */
+}
+.footerNavbar ul li a {
+    color: white; /* Setter fargen på lenkene til hvitt */
+    margin: 20px; /* Legger til margin rundt lenkene */
+    text-decoration: none; /* Fjerner understreking fra lenkene */
+    font-size: 1.3em; /* Setter fontstørrelse til 1.3em */
+    opacity: 0.7; /* Setter gjennomsiktighet til 0.7 */
+    transition: 0.5s; /* Legger til overgangseffekt med varighet 0.5 sekunder */
+}
+.footerNavbar ul li a:hover {
+    opacity: 1; /* Endrer gjennomsiktighet til 1 ved hover */
 /* Stil for bilder inne i kortene */
+}
 .kort-spisesteder img {
     width: 100%; /* Skalerer bildet til å passe innenfor kortets bredde */
     height: auto; /* Auto-justering av høyde for å bevare bildets proporsjoner */
 }
 
-
-
-.spisesteder-innhold {
-    padding: 15px; /* 16 piksler padding på alle sider av innholdet */
+/* Stil for nedre del av footer */
+.footerNedreDel {
+    background-color: #000; /* Setter bakgrunnsfargen til svart */
+    padding: 20px; /* Legger til padding (fyll) rundt innholdet */
+    text-align: center; /* Sentrerer teksten */
 }
+/* tilpasser kort innholdet i de tre paragrafene slik 
+at det ser fint ut */
 
-/* Stil for alle overskrifter i innholdet */
-.spisesteder-innhold  h3 {
+/* Stil for kortinnhold */
+.spisesteder-innhold {
+    padding: 16px; /* 16 piksler padding på alle sider */
+}
+.footerNedreDel p {
+    color: white; /* Setter teksten til hvitt */
+}
+/* Stil for overskrift (h3) i kortinnhold */
+.spisesteder-innhold h3 {
     font-size: 28px; /* Skriftstørrelse på 28 piksler */
     margin-bottom: 8px; /* Bunnmargin på 8 piksler for avstand under overskriften */
     font-weight: 550; 
@@ -505,13 +603,32 @@ img.bilde-index2 {
 
 }
 
-/* Stil for alle (p) i innholdet */
+/* Stil for designer-informasjonen */
+.designer {
+    opacity: 0.7; /* Setter gjennomsiktighet til 0.7 */
+    text-transform: uppercase; /* Gjør teksten til store bokstaver */
+    letter-spacing: 1px; /* Legger til litt avstand mellom bokstavene */
+    font-weight: 400; /* Setter font-weight til 400 (normal) */
+    margin: 0px 5px; /* Legger til margin (avstand) rundt teksten */
+}
+/* Stil for vanlig tekst (p) i kortinnhold */
 .spisesteder-innhold  p {
     color: #373737; /* Tekstfarge i grå (#666) */
     font-size: 1em; /* Skriftstørrelse på 1 em */
     line-height: 1.40; /* Linjehøyde 1.4 for bedre lesbarhet */
 }
 
+/* Bruker media query for å gjøre footer responsiv på små skjermer */
+@media (max-width: 700px) {
+    .footerNav ul {
+        flex-direction: column; /* Endrer retningen til kolonne ved lav skjermstørrelse */
+    }
+    .footerNav ul li {
+        width: 100%; /* Gjør lenkene like brede som forelder-elementet */
+        text-align: center; /* Sentrerer lenkene horisontalt */
+        margin: 10px; /* Legger til margin (avstand) rundt lenkene */
+    }
+}
 /* Stil for lenker i kortinnhold med tilpasset dekorasjon */
 .spisesteder-innhold .adresse-link {
     display: inline-block; /* Viser lenken som en blokk */
