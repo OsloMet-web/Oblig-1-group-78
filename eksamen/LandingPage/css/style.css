@@ -338,29 +338,6 @@ at det ser fint ut */
     padding-bottom: 5%; /* 2% nederst for ekstra mellomrom */
 }
 
-/* Stil for informasjon om spisesteder */
-.info-spisesteder {
-    margin-top: 5vw; /* 5% marg fra toppen relativt til viewport-bredde */
-    margin-left: 15vw; /* 15% marg fra venstre relativt til viewport-bredde */
-    margin-right: 15vw; /* 15% marg fra høyre relativt til viewport-bredde */
-    font-size: larger; /* Større skriftstørrelse */
-    line-height: 40px; /* Linjehøyde på 40 piksler */
-    letter-spacing: 2px; /* Bokstavavstand på 2 piksler */
-}
-
-/* Kroppsstil */
-body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Skrifttype for kroppen */
-    font-size: 1rem; /* Grunnleggende skriftstørrelse på 1 rem */
-    margin: 0px; /* Fjern standardmargin */
-}
-
-/* Stil for adressekoblinger */
-.adresse-link {
-    color: #2d57b1d0; /* Sett fargen på adressekoblinger */
-}
-
-
 /* Stil for hovedbeholderen */
 .Kontainer-hovedbeholder {
     padding: 2rem; /* Luftplass rundt innholdet */
@@ -476,32 +453,21 @@ img.bilde-index2 {
     font-family: sans-serif;  /* Bruker en sans-serif skrifttype */
 }
 
-/*STIL FOR SPISESTEDER SIDE */
+
 
 
 /* Stil for footer-elementet */
 footer {
     background-color: #111; /* Setter bakgrunnsfargen for footer */
 }
-.info-spisesteder {
-    margin-top: 5vw;
-    margin-left: 15vw;
-    margin-right: 15vw;
-    font-size: larger;
-    line-height: 40px;
-    letter-spacing: 2px;
-}
+
 
 /* Stil for beholderen innenfor footer */
 .footerKontainer {
     width: 100%; /* Gjør beholderen like bred som forelder-elementet sitt */
     padding: 70px 30px 20px; /* Setter padding for beholderen (topp, høyre, bunn) */
 }
-body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 1rem;
-    margin: 0px;
-}
+
 
 /* Stil for beholderen til sosiale medieikoner */
 .sosialeMediaIkoner {
@@ -516,14 +482,6 @@ body {
     background-color: white; /* Setter bakgrunnsfarge for ikonene */
     margin: 10px; /* Legger til margin rundt ikonene */
     border-radius: 50%; /* Gjør ikonene sirkulære ved å sette border-radius til 50% */
-}
-/* Stil for kontaineren som inneholder kortene */
-.container-spisesteder {
-    display: flex; /* Bruker Flexbox for layoutkontroll */
-    background-color: #ffffff; /* Hvit bakgrunnsfarge for kontaineren */
-    justify-content: center; /* Sentrerer kortene horisontalt i kontaineren */
-    flex-wrap: wrap; /* Tillater kortene å gå til neste rad ved behov */
-    margin-top: 100px; /* Legger til 100 piksler margin øverst for å justere plassering */
 }
 
 /* Stil for selve sosiale medieikonene */
@@ -573,10 +531,7 @@ body {
     opacity: 1; /* Endrer gjennomsiktighet til 1 ved hover */
 /* Stil for bilder inne i kortene */
 }
-.kort-spisesteder img {
-    width: 100%; /* Skalerer bildet til å passe innenfor kortets bredde */
-    height: auto; /* Auto-justering av høyde for å bevare bildets proporsjoner */
-}
+
 
 /* Stil for nedre del av footer */
 .footerNedreDel {
@@ -594,14 +549,7 @@ at det ser fint ut */
 .footerNedreDel p {
     color: white; /* Setter teksten til hvitt */
 }
-/* Stil for overskrift (h3) i kortinnhold */
-.spisesteder-innhold h3 {
-    font-size: 28px; /* Skriftstørrelse på 28 piksler */
-    margin-bottom: 8px; /* Bunnmargin på 8 piksler for avstand under overskriften */
-    font-weight: 550; 
-    color: rgba(0, 0, 0, 0.609);
 
-}
 
 /* Stil for designer-informasjonen */
 .designer {
@@ -611,12 +559,7 @@ at det ser fint ut */
     font-weight: 400; /* Setter font-weight til 400 (normal) */
     margin: 0px 5px; /* Legger til margin (avstand) rundt teksten */
 }
-/* Stil for vanlig tekst (p) i kortinnhold */
-.spisesteder-innhold  p {
-    color: #373737; /* Tekstfarge i grå (#666) */
-    font-size: 1em; /* Skriftstørrelse på 1 em */
-    line-height: 1.40; /* Linjehøyde 1.4 for bedre lesbarhet */
-}
+
 
 /* Bruker media query for å gjøre footer responsiv på små skjermer */
 @media (max-width: 700px) {
@@ -628,6 +571,63 @@ at det ser fint ut */
         text-align: center; /* Sentrerer lenkene horisontalt */
         margin: 10px; /* Legger til margin (avstand) rundt lenkene */
     }
+}
+
+
+/*STIL FOR SPISESTEDER SIDE */
+
+
+/* Stil for informasjon om spisesteder */
+.info-spisesteder {
+    margin-top: 5vw; /* 5% marg fra toppen relativt til viewport-bredde */
+    margin-left: 15vw; /* 15% marg fra venstre relativt til viewport-bredde */
+    margin-right: 15vw; /* 15% marg fra høyre relativt til viewport-bredde */
+    font-size: larger; /* Større skriftstørrelse */
+    line-height: 40px; /* Linjehøyde på 40 piksler */
+    letter-spacing: 2px; /* Bokstavavstand på 2 piksler */
+}
+
+/* Kroppsstil */
+.basic-body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Skrifttype for kroppen */
+    font-size: 1rem; /* Grunnleggende skriftstørrelse på 1 rem */
+    margin: 0px; /* Fjern standardmargin */
+}
+
+
+
+
+
+/* Stil for kontaineren som inneholder kortene */
+.container-spisesteder {
+    display: flex; /* Bruker Flexbox for layoutkontroll */
+    background-color: #ffffff; /* Hvit bakgrunnsfarge for kontaineren */
+    justify-content: center; /* Sentrerer kortene horisontalt i kontaineren */
+    flex-wrap: wrap; /* Tillater kortene å gå til neste rad ved behov */
+    margin-top: 100px; /* Legger til 100 piksler margin øverst for å justere plassering */
+}
+
+
+
+.kort-spisesteder img {
+    width: 100%; /* Skalerer bildet til å passe innenfor kortets bredde */
+    height: auto; /* Auto-justering av høyde for å bevare bildets proporsjoner */
+}
+
+/* Stil for overskrift (h3) i kortinnhold */
+.spisesteder-innhold h3 {
+    font-size: 28px; /* Skriftstørrelse på 28 piksler */
+    margin-bottom: 8px; /* Bunnmargin på 8 piksler for avstand under overskriften */
+    font-weight: 550; 
+    color: rgba(0, 0, 0, 0.609);
+
+}
+
+/* Stil for vanlig tekst (p) i kortinnhold */
+.spisesteder-innhold  p {
+    color: #373737; /* Tekstfarge i grå (#666) */
+    font-size: 1em; /* Skriftstørrelse på 1 em */
+    line-height: 1.40; /* Linjehøyde 1.4 for bedre lesbarhet */
 }
 /* Stil for lenker i kortinnhold med tilpasset dekorasjon */
 .spisesteder-innhold .adresse-link {
@@ -641,5 +641,5 @@ at det ser fint ut */
     color: #ffffff; /* Skriftfargen er hvit */
 }
 .spisesteder-innhold .adresse-link:hover {
-    background-color: rgba(40, 80, 30, 0.6); /* Bakgrunnsfarge i mørk grønn */
+    background-color: rgba(40, 80, 30, 0.6); /* Mørkere farge får å indikere trykkbarhet */
 }
