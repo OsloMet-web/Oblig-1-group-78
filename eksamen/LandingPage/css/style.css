@@ -442,16 +442,22 @@ img.bilde-index2 {
 
 /*STIL FOR SPISESTEDER SIDE */
 
+/*Stil for overskrift og innledning til spisestedene */
 .info-spisesteder {
-    margin-top: 5vw;
+    margin-top: 5vw; /*Lager margin rundt innholdet i innledningen*/
     margin-left: 15vw;
     margin-right: 15vw;
-    font-size: larger;
-    line-height: 40px;
+    font-size: larger; /*Gjør teksten mer synlig og lesbar*/
+    line-height: 35px;
+
     letter-spacing: 2px;
 }
+/*velger alle h1 elementer under denne klassen*/
+.info-spisesteder  h1 {
+    margin-bottom: 0.5em; /*legger til litt mellomrom mellom overskrift og innledning*/
+}
 
-body {
+.basic-body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1rem;
     margin: 0px;
@@ -473,9 +479,9 @@ body {
     width: 30rem; /* Bredde på 325 piksler */
     background-color: #f0f0f0; /* Bakgrunnsfarge i lys grå */
     border-radius: 8px; /* Avrundede hjørner med radius på 8 piksler */
-    overflow: hidden; /* Skjuler innhold som overskrider kortets ramme */
+    overflow: hidden; /* Skjuler deler av bildene som overskrider kortets ramme */
     box-shadow: 0px 2px 4px rgba(0,0,0,0.2); /* Skyggeeffekt med offset og farge */
-    margin: 20px; /* 20 piksler margin på alle sider for å lage avstand mellom kortene */
+    margin: 25px; /* 25 piksler margin på alle sider for å lage avstand mellom kortene */
 }
 
 /* Stil for bilder inne i kortene */
@@ -485,16 +491,13 @@ body {
 }
 
 
-/* tilpasser kort innholdet i de tre paragrafene slik 
-at det ser fint ut */
 
-/* Stil for kortinnhold */
 .spisesteder-innhold {
-    padding: 16px; /* 16 piksler padding på alle sider */
+    padding: 15px; /* 16 piksler padding på alle sider av innholdet */
 }
 
-/* Stil for overskrift (h3) i kortinnhold */
-.spisesteder-innhold h3 {
+/* Stil for alle overskrifter i innholdet */
+.spisesteder-innhold  h3 {
     font-size: 28px; /* Skriftstørrelse på 28 piksler */
     margin-bottom: 8px; /* Bunnmargin på 8 piksler for avstand under overskriften */
     font-weight: 550; 
@@ -502,7 +505,7 @@ at det ser fint ut */
 
 }
 
-/* Stil for vanlig tekst (p) i kortinnhold */
+/* Stil for alle (p) i innholdet */
 .spisesteder-innhold  p {
     color: #373737; /* Tekstfarge i grå (#666) */
     font-size: 1em; /* Skriftstørrelse på 1 em */
