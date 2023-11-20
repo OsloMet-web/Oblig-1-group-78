@@ -92,7 +92,8 @@ article > h2 {
     width:100%;
 }
 .tekstboks-skrift{ /*hvit skrift for brukervennlighet*/
-    color:rgb(214, 213, 213) 
+    color:rgb(214, 213, 213); 
+    font-family: 'Calibri', 'Gill Sans MT', 'Trebuchet MS', sans-serif; /* Skriftfamilie */
 }
 
 /* Stil for overskrift (h2) generelt */
@@ -140,7 +141,7 @@ h3 {
     color: white; /* Tekstfarge hvit */
     padding: 10px 20px; /* 10 piksler padding på topp og bunn, 20 piksler på sider */
     font-size: 2vw; /* Skriftstørrelse basert på viewport-bredde (vw) for skalering */
-    background: yellowgreen; /* Bakgrunnsfarge i gulgrønn */
+    background: rgb(81, 110, 22); /* Bakgrunnsfarge i gulgrønn */
     border-radius: 8px; /* Avrundede hjørner med radius på 8 piksler */
     transition: 0.4s; /* Overgangseffekt på 0.4 sekunder for jevne overganger */
 }
@@ -176,7 +177,7 @@ h3 {
 /* Stil for lenker i overskriftsteksten */
 .heading-text a {
     text-decoration: none; /* Fjerner understreking fra lenker */
-    background-color: yellowgreen; /* Bakgrunnsfarge i gulgrønn */
+    background-color: rgb(81, 110, 22); /* Bakgrunnsfarge i gulgrønn */
     color: white; /* Skriftfarge hvit */
     padding: 10px 20px; /* 10 piksler padding på topp og bunn, 20 piksler på sider */
     letter-spacing: 5px; /* Øker avstanden mellom bokstaver med 5 piksler */
