@@ -670,6 +670,7 @@ p.tekst-accessibility {
 h1.overskrift-tilgjengelighet {
     color:white; /* whit farge */
     padding: 1rem; /* Luft rund på 1 rem som er skalerbar når man justerer browser */
+    font-size: 2.7rem;
 }
 
 
