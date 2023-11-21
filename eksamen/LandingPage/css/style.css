@@ -9,7 +9,7 @@
 /* Stil for overskriften (header) */
 .fullsize{
     width: 100%; /* Full bredde */
-    height: 100vh; /* Høyde er 100% av viewport-høyden */
+    height: 70vh; /* Høyde er 100% av viewport-høyden */
 }
 
 /* Stil for hele siden (body) med en bakgrunnsgradient og et bakgrunnsbilde */
