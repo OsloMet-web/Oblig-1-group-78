@@ -14,7 +14,7 @@
 
 /* Stil for hele siden (body) med en bakgrunnsgradient og et bakgrunnsbilde */
 .bakgrunnsbilde-oslomet{
-    
+    /*Oslomet. Hentet 21.11/2023 fra: https://ansatt.oslomet.no/siste-nytt/-/nyhet/na-blir-det-lettere-a-finne-kollegaer-pa-nettsidene*/
     background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.2)), url(../img/oslomet-logo.jpg);
     /* Bakgrunn med en gradient og et bilde */
     background-size: cover; /* Skalering av bakgrunnen for å dekke hele vinduet */
@@ -22,7 +22,7 @@
     background-attachment: fixed; /* Bakgrunnen er festet og scroller ikke med innholdet */
 }
 .bakgrunnsbilde-satelitt{
-    
+    /*link til bilde: <!--Frąckiewicz, M. Starlink’s High-Speed Satellite Internet: A Game Changer for Turkey. TS2. Hentet 20.11.2023 fra https://ts2.space/en/starlinks-high-speed-satellite-internet-a-game-changer-for-turkey-2/-->
     background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.2)), url(../img/starlink-satelitt.jpg);
     /* Bakgrunn med en gradient og et bilde */
     background-size: cover; /* Skalering av bakgrunnen for å dekke hele vinduet */
