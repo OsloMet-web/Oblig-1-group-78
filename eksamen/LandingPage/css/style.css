@@ -662,9 +662,50 @@ p.tekst-accessibility {
     text-align: left; /* Teksten skal gå fra venstre til høyre */
     padding: 1.5rem; /* Avstand mellom bilde og tekst */
     line-height: 2rem; /* Setter linjeavstand sånn at det blir lettere å lese */
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Setter tekst størrelse til skalerbar prosent */
+    font-family: sans-serif; /* Setter skrift type */
+    border-radius: 20px; /* Avrunder kanter med 20 px*/
+    background-color: black; /* Setter bakgrunnsfarge slik at teksten blir mer lesbar, bakgrunnen forstyrrer leseren*/
 }
 h1.overskrift-tilgjengelighet {
     color:white;
     padding: 1rem;
+}
+
+
+/* Stil for hovedbeholderen */
+.Kontainer-hovedbeholder-accessibility {
+    padding: 2rem; /* Luftplass rundt innholdet */
+}
+
+/* Synlighetsområde for sliderinnholdet */
+.slider-synlighet {
+    position: relative; /* Relativ posisjon for innholdet */
+    max-width: 55rem; /* Maksimumsbredde for innholdet */
+    margin: 0 auto; /* Sentrering av synlighetsområdet */
+}
+
+/* Stil for selve bildeslideren */
+.slider {
+    display: flex; /* Viser bildene i en rad */
+    aspect-ratio: 21/10; /* Sideforhold 16:9 for bildene */
+    overflow-x: auto; /* Horisontal rulling for bilder som går utover bredden */
+    scroll-snap-type: x mandatory; /* Rulling av bilder med "snap" */
+    scroll-behavior: smooth; /* Smidig rulling mellom bilder */
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25); /* Skyggeeffekt for slideren */
+    border-radius: 0.5rem; /* Avrundede hjørner for slideren */
+}
+
+/* Bilder i slideren */
+.slider img {
+    flex: 1 0 100%; /* Bilder strekker seg for å fylle sliderens bredde */
+    scroll-snap-align: start; /* Bilder ruller til starten av synlighetsområdet */
+    object-fit: cover; /* Bilder tilpasses og dekker hele bildeområdet */
+}
+
+.accessibility-slidebar-tekst {
+    font-size: 3vw;
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
 }
