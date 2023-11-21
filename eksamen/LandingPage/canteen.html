@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!--Setter språk til norsk fordi innholdet er det-->
+<html lang="no">
+<head>
+    <!--Setter tegnsettet til UTF-8, nettsiden til bredden av enheten, og linker til et felles css stylesheet. Har også en unik passende tittel-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Spisesteder</title>
+</head>
+<body  class="basic-body">
+    <header>
+        <!--Legger til sammme navbar som de andre sidene-->
+        <nav class="nav-spisesteder">
+            <div class="logo">
+                <!--Bruker egenlaget svg for skalerbarhet-->
+                <a href="index.html"><img src="img/oslomet.svg" alt="logo"></a>
+            </div>
+            <div class="meny">
+                <a href="index.html">Hjem</a>
+                <a href="topical.html">Info</a>
+                <a href = "canteen.html">Kantine</a>
+            </div>
+            <!--Egen klasse for å lage knapp til tilgjengelighet-->
+            <div class = "tilgjengelighet">
+                <a href = "accessibility.html">Tilgjengelighet</a>
+            </div>
+
+        </nav>
+    
+    </header>
+    <main>
+        <!--Lager en klasse til overskrift og innledning-->
+        <div class="info-spisesteder">
+        <h1>Våre spisesteder og kaffebarer</h1>
+        <p>
+            Det er mange unike spisesteder i nærheten av skolen, under er noen av disse. Velkommen innom for en god kopp kaffe, lunsj eller middag. 
+        </p>
+        </div>
+
+        <!--Oppretter klasse container for kortene med de ulike spisestedene-->
+        <div class="container-spisesteder">
+            <!--bruker samme klasse for alle kortene-->
+            <div class="kort-spisesteder">
+                <!--Bilde med alternativ tekst-->
+                <img src="img/andreaspiseri.jpg" alt="Dame som baker boller til en kiosk">
+                <div class="spisesteder-innhold">
+                    <h2>Andrea spiseri</h2>
+                    <p>
+                        Spiseriet i P32. 
+                        I Andrea spiseri kan du forsyne deg med varmmat, suppe, salat, pålegg og brød fra vår buffet, og betale på vekt. I tillegg finner du et bredt utvalg av wraps og smurte produkter, fristende kaker og bakevarer og gode kaffedrikker. Alt servert i store, lyse og moderne lokaler.
+                    </p>
+                    <br>
+                    <!--Link til adresse i google maps med egen klasse-->
+                    <a href="https://goo.gl/maps/eeqYPooDwRLQonW76" class="adresse-link">Pilestredet 32</a>
+                    <p>I nærheten av <b>Oslomet</b></p>
+                    <br>
+                    <!--Ny paragraf for åpningstider-->
+                    <p>Mandag til fredag; 08:00 - 17:00.</p>
+                
+                </div>
+            </div> 
+            <div class="kort-spisesteder">
+                <!--Bilde med alternativ tekst-->
+                <img src="img/annas-spiseri.jpg" alt="Et stort innendørs spise-område og kiosk">
+                <div class="spisesteder-innhold">
+                    <h2>Annas spiseri</h2>
+                    <p>Møtestedet på Oslomet. Annas spiseri er vårt største spisested på OsloMet Pilestredet Campus. Her tilbyr vi varmmat, salat, pålegg og brød på vekt. Vi har også et bredt utvalg av wraps og smurte produkter, kalde og varme drikker, bakevarer og meierivarer.</p>
+                    <br>
+                    <!--Link til adresse i google maps med egen klasse-->
+                    <a href="https://goo.gl/maps/1VQhU3RdfyDH8L1GA" class="adresse-link">Pilestredet 52</a>
+                    <p>I nærheten av <b>Oslomet</b></p>
+                 
+                    <br>
+                     <!--Ny paragraf for åpningstider-->
+                    <p>Mandag til fredag; 08:00 - 17:00.</p>
+                
+                </div>
+            </div> 
+            <div class="kort-spisesteder">
+                <!--Bilde med alternativ tekst-->
+                <img src="img/kaffe-eva.jpg" alt="Liten kafe med ulike varer">
+                <div class="spisesteder-innhold">
+                    <h2>Kafe Eva</h2>
+                    <p>
+                        Liten, men god. Kafe Eva har et stort utvalg av kioskvarer, ferdigpakkede salater og baguetter du kan ta med deg. Kaféen tilbyr også mat som for eksempel toast eller suppe, som kan varmes i kaféen.</p>
+                    <br>
+                    <!--Link til adresse i google maps med egen klasse-->
+                    <a href="https://goo.gl/maps/rZ6sVQFALzjMMkNXA" class="adresse-link">Pilestredet 48</a>
+                    <p>I nærheten av <b>Oslomet</b></p>
+                    <br>
+                    <!--Ny paragraf for åpningstider-->
+                    <p>Mandag til fredag; 08:00 - 15:00.</p>
+                
+                </div>
+            </div> 
+            <div class="kort-spisesteder">
+                <!--Bilde med alternativ tekst-->
+                <img src="img/kaffelars.jpg" alt="Moderne kaffebar i mørk stil">
+                <div class="spisesteder-innhold">
+                    <h2>Kaffelars kaffebar</h2>
+                    <p>
+                        Stedet for god kaffe i P46. 
+                        Ta en pause mellom forelesning og egenlesning, nyt en god kopp kaffe, litt te, påsmurt mat og kanskje en kakebit.
+                    </p>
+                    <br>
+                    <!--Link til adresse i google maps med egen klasse-->
+                    <a href="https://goo.gl/maps/cQ6odqwuUCHhiUPk9" class="adresse-link">Pilestredet 46</a>
+                    <p>I nærheten av <b>Oslomet</b></p>
+                    <br>
+                    <!--Ny paragraf for åpningstider-->
+                    <p>Mandag til fredag; 08:00 - 15:00.</p>
+                
+                </div>
+            </div> 
+            <div class="kort-spisesteder">
+                <!--Bilde med alternativ tekst-->
+                <img src="img/olaf-spiseri.jpg" alt="Spiseri med buffet av ulike varer">
+                <div class="spisesteder-innhold">
+                    <h2>Olaf spiseri</h2>
+                    <p>
+                        Spisepause i store og lyse lokaler. Olaf spiseri tilbyr buffet med varmmat, supper, pålegg og brød, hvor du betaler på vekt. Du finner også et bredt utvalg av wraps og smurte produkter i tillegg til kaker og ulike varme og kalde drikker.
+                    </p>
+                    <br>
+                    <!--Link til adresse i google maps med egen klasse-->
+                    <a href="https://goo.gl/maps/MHKu53xgxr6nu66DA" class="adresse-link">Pilestredet 35</a>
+                    <p>I nærheten av <b>Oslomet</b></p>
+                    <br>
+                    <!--Ny paragraf for åpningstider-->
+                    <p>Mandag til fredag; 08:00 - 15:30.</p>
+                
+                </div>
+            </div> 
+            <div class="kort-spisesteder">
+                <!--Bilde med alternativ tekst-->
+                <img src="img/ufyr-bredt.jpg" alt="Resturant med langbord og planter">
+                <div class="spisesteder-innhold">
+                    <h2>Union167 Fyrhuset</h2>
+                    <p>
+                        Møteplassen på OsloMet. Union Fyrhuset på OsloMet byr på nystekte bakevarer, sandwicher, ferske croissanter og boller rett fra ovnen. Prøv vår deilige steinovnsbakt italiensk pizza laget av vår pizzaiolo Paolo som vi synes er byens beste pizza. Vi serverer øl, vin og et stort utvalg av te og kaffedrikker. 
+                    </p>
+                    <br>
+                    <!--Link til adresse i google maps med egen klasse-->
+                    <a href="https://goo.gl/maps/1VQhU3RdfyDH8L1GA" class="adresse-link">Pilestredet 52</a>
+                    <p>I nærheten av <b>Oslomet</b></p>
+                    <br>
+                    <!--Nye paragrafer for åpningstider-->
+                    <p>Mandag; 10:00 - 18:00.</p>
+                    <p>Tirsdag, torsdag og fredag; 10:00 - 16:00.</p>
+                    <p>Onsdag; 10:00 - 19:00.</p>
+                
+                </div>
+            </div> 
+            
+
+         
+            
+        </div>
+
+    
+
+
+    </main>
+    <footer>
+        <!--Felles footer for alle sidene-->
+        <div class = "footerKontainer">
+            <!--Sosialemedier ikoner for design, ikke funksjonelle-->
+            <div class = "sosialeMediaIkoner">
+                <a href = ""><i class = "fa-brands fa-facebook"></i></a>
+                <a href = ""><i class = "fa-brands fa-instagram"></i></a>
+                <a href = ""><i class = "fa-brands fa-twitter"></i></a>
+                <a href = ""><i class = "fa-brands fa-google-plus"></i></a>
+                <a href = ""><i class = "fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+        <!--Kort navigasjon til andre deler av nettsiden-->
+        <div class = "footerNavbar">
+            <ul>
+                <li><a href = "index.html">Hjem</a></li>
+                <li><a href = "accessibility.html">Tilgjengelighet</a></li>
+                <li><a href = " ">kontakt Oss</a></li>
+            </ul>
+        </div>
+        <div class = "footerNedreDel">
+            <p>Copyright &copy;2023; Designet av <span class = "designer">Oslomet</span></p>
+        </div>
+        </footer>
+</body>
+<!--Kilder til bilder for denne siden-->
+<!--Fotograf ikke oppgitt. Student i Oslo."Andrea spiseri", Hentet 18.11.2023 fra: https://sio.no/mat-og-drikke/spisesteder/andrea-spiseri -->
+<!--Fotograf ikke oppgitt. Student i Oslo."Annas spiseri", Hentet 18.11.2023 fra: https://sio.no/mat-og-drikke/spisesteder/annas-spiseri-->
+<!--Fotograf ikke oppgitt. Student i Oslo."Kaffelars", Hentet 18.11.2023 fra: https://sio.no/mat-og-drikke/spisesteder/Kaffelars-kaffebar-->
+<!--Fotograf ikke oppgitt. Student i Oslo."Kafe eva", Hentet 18.11.2023 fra: https://sio.no/mat-og-drikke/spisesteder/Kafe-Eva-->
+<!--Fotograf ikke oppgitt. Student i Oslo."Olaf spiseri", Hentet 18.11.2023 fra:https://sio.no/mat-og-drikke/spisesteder/Olaf%20spiseri-->
+<!--Fotograf ikke oppgitt. Student i Oslo."Union167 Fyrhuset", Hentet 18.11.2023 fra: https://sio.no/mat-og-drikke/spisesteder/Union%20Fyrhuset-->
+
+<!--Kilder til tekst for denne siden-->
+<!--Forfatter ikke oppgitt. Student i Oslo."Våre spisesteder og kaffebarer", Hentet 18.11.2023 fra: https://sio.no/mat-og-drikke/vare-spisesteder-og-kaffebarer?campus=OsloMet-->
+<!--Forfatter ikke oppgitt. Student i Oslo."Andrea spiseri", Hentet 18.11.2023 fra: https://sio.no/mat-og-drikke/spisesteder/andrea-spiseri -->
+<!--Forfatter ikke oppgitt. Student i Oslo."Annas spiseri", Hentet 18.11.2023 fra: https://sio.no/mat-og-drikke/spisesteder/annas-spiseri-->
+<!--Forfatter ikke oppgitt. Student i Oslo."Kaffelars", Hentet 18.11.2023 fra: https://sio.no/mat-og-drikke/spisesteder/Kaffelars-kaffebar-->
+<!--Forfatter ikke oppgitt. Student i Oslo."Kafe eva", Hentet 18.11.2023 fra: https://sio.no/mat-og-drikke/spisesteder/Kafe-Eva-->
+<!--Forfatter ikke oppgitt. Student i Oslo."Olaf spiseri", Hentet 18.11.2023 fra:https://sio.no/mat-og-drikke/spisesteder/Olaf%20spiseri-->
+<!--Forfatter ikke oppgitt. Student i Oslo."Union167 Fyrhuset", Hentet 18.11.2023 fra: https://sio.no/mat-og-drikke/spisesteder/Union%20Fyrhuset-->
+</html>
